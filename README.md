@@ -9,15 +9,15 @@ The goal of this project was to first. Identity the parameters of pulling API in
 The second goal was to use that information to build an understanding of the relationship between Restaurant Ratings and various variables that might affect it based on the information available to us. 
 
 ## Process
-### (your step 1)
+### Step 1:
 The first step was to parse all 3 sites to create a dataframe. The first was to parse Citibikes for the Vancouver area to find the location of all mobibike stations across Vancouver. The second was to use that dataframe and the coordinates of each location to parse each of the following two datasets for restaurants and bars witin a 1000m radius. The reason for using the Mobibike locations within the parsing parameters was to limit the amount of data that would need to be parsed for each location. 
-### (your step 2)
+### Step 2:
 Once all three datasets have been parsed and put into CSV dataframes. The next step was to combine the dataframes all together. Yelp and Foursquare were combined simply based on location names, matching each location to each other. Any duplicates were dropped and the data was cleaned and formatted. 
 
-### (your step 3): EDA
+### Step 3: EDA
 General EDA was performed on this dataset to work on ensuring all the data was clean and formatted correctly, this is done only on columns that were intended to be used in the regression model later on. Prices were listed as $ on yelp so they were changed to numerical values for the model and a separate categorical column was created as well. Distance was also calculated using a Haversine formula to calculate the distance between each location and the nearest bike station. 
 
-### (your step 4): Model
+### Step 4: Model
 The model was built using the dependent variable of Review counts to understand the relationship between how many reviews a place received in relation to the other available variables such as ratings, distance, and price. The model was built using a linear regression model to determine the relationship between the dependent variable and the independent variables. The model was run using a backwards regression approach so that the most significant variables were used in the model. The model was then tested using the R^2 value to determine if the model was able to predict the dependent variable accurately. Any variables with high P values were removed from the model and it was rerun until only variables with statisically significant variables were left. 
 
 ## Results

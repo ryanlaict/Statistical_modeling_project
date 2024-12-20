@@ -9,9 +9,9 @@ The goal of this project was to first. Identity the parameters of pulling API in
 The second goal was to use that information to build an understanding of the relationship between Restaurant Ratings and various variables that might affect it based on the information available to us. 
 
 ## Process
-### Step 1:
+### Step 1: Parsing API data
 The first step was to parse all 3 sites to create a dataframe. The first was to parse Citibikes for the Vancouver area to find the location of all mobibike stations across Vancouver. The second was to use that dataframe and the coordinates of each location to parse each of the following two datasets for restaurants and bars witin a 1000m radius. The reason for using the Mobibike locations within the parsing parameters was to limit the amount of data that would need to be parsed for each location. 
-### Step 2:
+### Step 2: Creating Databases
 Once all three datasets have been parsed and put into CSV dataframes. The next step was to combine the dataframes all together. Yelp and Foursquare were combined simply based on location names, matching each location to each other. Any duplicates were dropped and the data was cleaned and formatted. 
 
 ### Step 3: EDA

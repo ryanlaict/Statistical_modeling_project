@@ -36,8 +36,6 @@ Throughout the project, several challenges were encountered:
 
 4. **Model Complexity**: Building the regression model involved iterative testing and validation to handle multicollinearity and ensure statistical significance of the variables.
 
-5. **Time Constraints**: Balancing the scope of the project within the available timeframe was challenging, requiring prioritization of tasks and efficient time management.
-
 ## Future Goals
 The following steps would be taken if more time were available to continue the project:
 
